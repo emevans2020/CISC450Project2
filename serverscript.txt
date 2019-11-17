@@ -1,0 +1,242 @@
+Script started on 2019-11-17 16:54:08-0500
+emevans@cisc450:~/proj2$ make[2Plscd proj2/[K[K[K[K[K[K[K[K[Kls -l
+total 1867
+-rw-rw-r-- 1 emevans emevans        0 Nov 17 16:54 clientscript.txt
+-rw-rw-r-- 1 emevans emevans      231 Nov 17 15:08 Makefile
+-rw-rw-r-- 1 emevans emevans      119 Nov 17 15:38 README.md
+-rw-rw-r-- 1 emevans emevans        0 Nov 17 16:54 serverscript.txt
+-rw-rw-r-- 1 emevans emevans     1777 Nov 17 15:08 test1.txt
+-rw-rw-r-- 1 emevans emevans     3435 Nov 17 15:08 test2.txt
+-rw-rw-r-- 1 emevans emevans 54624256 Nov 17 15:50 typescript
+-rwxrwxr-x 1 emevans emevans    20552 Nov 17 16:47 udpclient
+-rw-rw-r-- 1 emevans emevans    11091 Nov 17 16:47 udpclient.c
+-rwxrwxr-x 1 emevans emevans    19864 Nov 17 16:47 udpserver
+-rw-rw-r-- 1 emevans emevans     8414 Nov 17 16:47 udpserver.c
+-rw-rw-r-- 1 emevans emevans      957 Nov 17 15:35 udpStruct.h
+emevans@cisc450:~/proj2$ make clean
+rm udpclient udpserver output.txt
+rm: cannot remove 'output.txt': No such file or directory
+Makefile:11: recipe for target 'clean' failed
+make: *** [clean] Error 1
+emevans@cisc450:~/proj2$ make
+/usr/bin/gcc -g udpclient.c -o udpclient -lm -std=gnu99
+/usr/bin/gcc -g udpserver.c -o udpserver -std=gnu99
+emevans@cisc450:~/proj2$ ls -l
+total 1844
+-rw-rw-r-- 1 emevans emevans        0 Nov 17 16:54 clientscript.txt
+-rw-rw-r-- 1 emevans emevans      231 Nov 17 15:08 Makefile
+-rw-rw-r-- 1 emevans emevans      119 Nov 17 15:38 README.md
+-rw-rw-r-- 1 emevans emevans        0 Nov 17 16:54 serverscript.txt
+-rw-rw-r-- 1 emevans emevans     1777 Nov 17 15:08 test1.txt
+-rw-rw-r-- 1 emevans emevans     3435 Nov 17 15:08 test2.txt
+-rw-rw-r-- 1 emevans emevans 54624256 Nov 17 15:50 typescript
+-rwxrwxr-x 1 emevans emevans    20552 Nov 17 16:54 udpclient
+-rw-rw-r-- 1 emevans emevans    11091 Nov 17 16:47 udpclient.c
+-rwxrwxr-x 1 emevans emevans    19864 Nov 17 16:54 udpserver
+-rw-rw-r-- 1 emevans emevans     8414 Nov 17 16:47 udpserver.c
+-rw-rw-r-- 1 emevans emevans      957 Nov 17 15:35 udpStruct.h
+emevans@cisc450:~/proj2$ .udps[K[K[K[K/s[Kudpserver  0 0[1P[1P[1@ 
+Waiting for incoming messages on port 56789
+
+Packet 0 received with 15 data bytes
+ACK 0 transmitted
+Packet 1 received with 31 data bytes
+ACK 1 transmitted
+Packet 0 received with 13 data bytes
+ACK 0 transmitted
+Packet 1 received with 1 data bytes
+ACK 1 transmitted
+Packet 0 received with 16 data bytes
+ACK 0 transmitted
+Packet 1 received with 10 data bytes
+ACK 1 transmitted
+Packet 0 received with 1 data bytes
+ACK 0 transmitted
+Packet 1 received with 67 data bytes
+ACK 1 transmitted
+Packet 0 received with 42 data bytes
+ACK 0 transmitted
+Packet 1 received with 65 data bytes
+ACK 1 transmitted
+Packet 0 received with 44 data bytes
+ACK 0 transmitted
+Packet 1 received with 74 data bytes
+ACK 1 transmitted
+Packet 0 received with 33 data bytes
+ACK 0 transmitted
+Packet 1 received with 56 data bytes
+ACK 1 transmitted
+Packet 0 received with 45 data bytes
+ACK 0 transmitted
+Packet 1 received with 32 data bytes
+ACK 1 transmitted
+Packet 0 received with 1 data bytes
+ACK 0 transmitted
+Packet 1 received with 1 data bytes
+ACK 1 transmitted
+Packet 0 received with 56 data bytes
+ACK 0 transmitted
+Packet 1 received with 54 data bytes
+ACK 1 transmitted
+Packet 0 received with 61 data bytes
+ACK 0 transmitted
+Packet 1 received with 57 data bytes
+ACK 1 transmitted
+Packet 0 received with 57 data bytes
+ACK 0 transmitted
+Packet 1 received with 41 data bytes
+ACK 1 transmitted
+Packet 0 received with 54 data bytes
+ACK 0 transmitted
+Packet 1 received with 49 data bytes
+ACK 1 transmitted
+Packet 0 received with 49 data bytes
+ACK 0 transmitted
+Packet 1 received with 58 data bytes
+ACK 1 transmitted
+Packet 0 received with 16 data bytes
+ACK 0 transmitted
+Packet 1 received with 1 data bytes
+ACK 1 transmitted
+Packet 0 received with 17 data bytes
+ACK 0 transmitted
+Packet 1 received with 61 data bytes
+ACK 1 transmitted
+Packet 0 received with 61 data bytes
+ACK 0 transmitted
+Packet 1 received with 61 data bytes
+ACK 1 transmitted
+Packet 0 received with 61 data bytes
+ACK 0 transmitted
+Packet 1 received with 61 data bytes
+ACK 1 transmitted
+Packet 0 received with 61 data bytes
+ACK 0 transmitted
+Packet 1 received with 61 data bytes
+ACK 1 transmitted
+Packet 0 received with 15 data bytes
+ACK 0 transmitted
+Packet 1 received with 1 data bytes
+ACK 1 transmitted
+Packet 0 received with 45 data bytes
+ACK 0 transmitted
+Packet 1 received with 29 data bytes
+ACK 1 transmitted
+Packet 0 received with 45 data bytes
+ACK 0 transmitted
+Packet 1 received with 51 data bytes
+ACK 1 transmitted
+Packet 0 received with 47 data bytes
+ACK 0 transmitted
+Packet 1 received with 1 data bytes
+ACK 1 transmitted
+Packet 0 received with 1 data bytes
+ACK 0 transmitted
+Packet 1 received with 23 data bytes
+ACK 1 transmitted
+Packet 0 received with 1 data bytes
+ACK 0 transmitted
+Packet 1 received with 78 data bytes
+ACK 1 transmitted
+Packet 0 received with 23 data bytes
+ACK 0 transmitted
+Packet 1 received with 79 data bytes
+ACK 1 transmitted
+Packet 0 received with 5 data bytes
+ACK 0 transmitted
+Packet 1 received with 79 data bytes
+ACK 1 transmitted
+Packet 0 received with 5 data bytes
+ACK 0 transmitted
+Packet 1 received with 20 data bytes
+ACK 1 transmitted
+Packet 0 received with 17 data bytes
+ACK 0 transmitted
+Packet 1 received with 46 data bytes
+ACK 1 transmitted
+Packet 0 received with 57 data bytes
+ACK 0 transmitted
+Packet 1 received with 39 data bytes
+ACK 1 transmitted
+Packet 0 received with 62 data bytes
+ACK 0 transmitted
+Packet 1 received with 41 data bytes
+ACK 1 transmitted
+Packet 0 received with 24 data bytes
+ACK 0 transmitted
+Packet 1 received with 38 data bytes
+ACK 1 transmitted
+Packet 0 received with 39 data bytes
+ACK 0 transmitted
+Packet 1 received with 15 data bytes
+ACK 1 transmitted
+Packet 0 received with 51 data bytes
+ACK 0 transmitted
+Packet 1 received with 79 data bytes
+ACK 1 transmitted
+Packet 0 received with 1 data bytes
+ACK 0 transmitted
+Packet 1 received with 1 data bytes
+ACK 1 transmitted
+Packet 0 received with 15 data bytes
+ACK 0 transmitted
+Packet 1 received with 14 data bytes
+ACK 1 transmitted
+Packet 0 received with 13 data bytes
+ACK 0 transmitted
+Packet 1 received with 1 data bytes
+ACK 1 transmitted
+Packet 0 received with 63 data bytes
+ACK 0 transmitted
+Packet 1 received with 61 data bytes
+ACK 1 transmitted
+Packet 0 received with 32 data bytes
+ACK 0 transmitted
+Packet 1 received with 38 data bytes
+ACK 1 transmitted
+Packet 0 received with 64 data bytes
+ACK 0 transmitted
+Packet 1 received with 64 data bytes
+ACK 1 transmitted
+Packet 0 received with 71 data bytes
+ACK 0 transmitted
+Packet 1 received with 1 data bytes
+ACK 1 transmitted
+Packet 0 received with 65 data bytes
+ACK 0 transmitted
+Packet 1 received with 46 data bytes
+ACK 1 transmitted
+Packet 0 received with 1 data bytes
+ACK 0 transmitted
+Packet 1 received with 16 data bytes
+ACK 1 transmitted
+Packet 0 received with 59 data bytes
+ACK 0 transmitted
+Packet 1 received with 59 data bytes
+ACK 1 transmitted
+Packet 0 received with 9 data bytes
+ACK 0 transmitted
+Packet 1 received with 59 data bytes
+ACK 1 transmitted
+Packet 0 received with 9 data bytes
+ACK 0 transmitted
+Packet 1 received with 58 data bytes
+ACK 1 transmitted
+Packet 0 received with 14 data bytes
+ACK 0 transmitted
+Packet 1 received with 1 data bytes
+ACK 1 transmitted
+After the file transfer:
+
+Number of data packets received successfully: 94
+Number of data bytes received and sent to the user: 3435
+Total number of duplicate data packets received: 0
+Number of data packets dropped due to loss: 0
+Total number of data packets received (including lost and duplicate packets): 95
+Number of ACKs transmitted without loss: 94
+Number of ACKs generated but dropped due to loss: 0
+Total number of ACKs generated (with and without loss): 94
+emevans@cisc450:~/proj2$ [Kemevans@cisc450:~/proj2$ exit
+exit
+
+Script done on 2019-11-17 16:58:06-0500
